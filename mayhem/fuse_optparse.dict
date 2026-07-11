@@ -1,0 +1,19 @@
+# libfuse fuse_opt_parse fuzzer dictionary.
+# Tokens that steer the AdaLogics-sliced argv toward fuse_opt.c parsing branches: the harness's
+# option_spec templates, the generic -o option group, the '--' end-of-options marker, and common
+# FUSE mount options (process_real_option_group / next_arg / match_template paths).
+"--char_opt1="
+"--char_opt2="
+"--intopt3"
+"-i"
+"-o"
+"--"
+"="
+","
+"ro"
+"rw"
+"allow_other"
+"default_permissions"
+"max_read="
+"fsname="
+"subtype="
